@@ -1,0 +1,44 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --bg: linear-gradient(90deg, rgb(130, 180, 255), rgb(0, 96, 240) 29%, rgb(0, 55, 138) 58%, rgb(48, 131, 255));
+    --bg1: linear-gradient(90deg, rgb(1, 19, 46), rgb(0, 38, 95) 29%, rgb(0, 55, 138) 58%, rgb(48, 131, 255));
+}
+
+.maxh::-webkit-scrollbar, html::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* For Firefox */
+  .maxh, html {
+    scrollbar-width: none; /* hides scrollbar */
+    -ms-overflow-style: none;  /* IE 10+ */
+  }
+  
+  /* Additional fix for Firefox */
+  .maxh::-webkit-scrollbar, html::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+  }
+
+  /* .hidden-scrollbar{
+    background: rgba(255, 255, 255, 0.389);
+  } */
+
+  .gradient{
+    background: var(--bg1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.bg-gradient{
+  background: var(--bg1);
+}
+
+.bg-gradient1{
+    background: var(--bg);
+}
+
