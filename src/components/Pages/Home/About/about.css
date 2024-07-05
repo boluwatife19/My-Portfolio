@@ -18,3 +18,17 @@
   /* .hidden-scrollbar{
     background: rgba(255, 255, 255, 0.389);
   } */
+
+  @media (min-width: 0px) {
+    
+    .dynamic-width {
+      width: 100%;
+    }
+    }
+
+    @media (min-width: 768px) {
+      
+    .dynamic-width {
+      width: calc(100vw - 2%);
+    }
+    }

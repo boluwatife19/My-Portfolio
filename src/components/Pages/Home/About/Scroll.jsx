@@ -20,7 +20,7 @@ const content = [
       </p>
     ),
     content: (
-      <CardContainer className="h-full w-full flex items-center justify-center text-white pt-8">
+      <CardContainer className="h-full w-full flex items-center justify-center text-white pt-8 bg-red">
         <CardBody className="dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] w-full h-2/6 sm:w-[30rem] rounded-xl overflow-hidden">
           <CardItem translateZ="100" className="w-full h-full">
             <img
@@ -31,16 +31,6 @@ const content = [
               alt="thumbnail"
             />
           </CardItem>
-          <div className="flex justify-end items-center">
-            <CardItem
-              translateZ="20"
-              as="a"
-              href="https://twitter.com/mannupaaji"
-              className="px-4 py-2 rounded-xl mt-2 bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-            >
-              Send a Message
-            </CardItem>
-          </div>
         </CardBody>
       </CardContainer>
     ),
@@ -61,16 +51,6 @@ const content = [
               alt="thumbnail"
             />
           </CardItem>
-          <div className="flex justify-end items-center">
-            <CardItem
-              translateZ="20"
-              as="a"
-              href="https://twitter.com/mannupaaji"
-              className="px-4 py-2 rounded-xl mt-2 bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-            >
-              Send a Message
-            </CardItem>
-          </div>
         </CardBody>
       </CardContainer>
     ),
@@ -91,34 +71,15 @@ const content = [
               alt="thumbnail"
             />
           </CardItem>
-          <div className="flex justify-end items-center">
-            <CardItem
-              translateZ="20"
-              as="a"
-              href="https://twitter.com/mannupaaji"
-              className="px-4 py-2 rounded-xl mt-2 bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-            >
-              Send a Message
-            </CardItem>
-          </div>
         </CardBody>
       </CardContainer>
-    ),
-  },
-  {
-    title: "",
-    description: "",
-    content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Running out of content
-      </div>
     ),
   },
 ];
 
 export function StickyScrollRevealDemo() {
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full flex justify-center items-center overflow-hidden">
       <StickyScroll content={content} />
     </div>
   );

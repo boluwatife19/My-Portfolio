@@ -5,7 +5,11 @@
 
 :root{
     --bg: linear-gradient(90deg, rgb(130, 180, 255), rgb(0, 96, 240) 29%, rgb(0, 55, 138) 58%, rgb(48, 131, 255));
-    --bg1: linear-gradient(90deg, rgb(1, 19, 46), rgb(0, 38, 95) 29%, rgb(0, 55, 138) 58%, rgb(48, 131, 255));
+    --bg1: linear-gradient(90deg, rgb(3, 46, 112), rgb(0, 102, 255) 29%, rgb(1, 28, 69) 58%, rgb(0, 102, 255));
+}
+
+body{
+  background: white;
 }
 
 .maxh::-webkit-scrollbar, html::-webkit-scrollbar {

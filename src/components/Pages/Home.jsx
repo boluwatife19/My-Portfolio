@@ -8,6 +8,7 @@ import About from "./Home/About/Aboutu";
 import { Service } from "./Home/Services/Service";
 import { Project } from "./Home/Projects/Project";
 import { ContactForm } from "./Home/Contact/Contact";
+import { Footer } from "../Footer/Footer";
 
 const TracingBeam = ({ children, className }) => {
   const ref = useRef(null);
@@ -45,7 +46,7 @@ const TracingBeam = ({ children, className }) => {
       ref={ref}
       className={cn("relative w-l max-w-7xl-custom mx-auto h-full", className)}
     >
-      <div className="absolute -left-4 md:-left-20 top-3">
+      <div className="absolute -left- xl:-left-3 ssxl:-left-8 sxl:-left-16 2xl:-left-20 top-3">
         <motion.div
           transition={{
             duration: 0.2,
@@ -134,7 +135,7 @@ function BackG() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="flex flex-col gap-4 items-start justify-start px-4 w-[100%]"
+        className="flex flex-col items-center justify-center w-[100%]"
         id="home"
       >
         <TracingBeam>
@@ -142,13 +143,10 @@ function BackG() {
         <Tech />
         <About />
         <Project />
-        <Service />
-        <ContactForm />
-        <Hero />
-        <Hero />
-        <Hero />
-        <Hero />
+        {/* <Service />
+        <ContactForm /> */}
         </TracingBeam>
+        {/* <Footer /> */}
       </motion.div>
       </AuroraBackground>
         </>

@@ -22,7 +22,7 @@ const items = [
 
 function Slideer(){
     return(
-        <div>
+        <div className="w-full flex justify-center items-center">
            <InfiniteMovingCards items={items} />
         </div>
     )

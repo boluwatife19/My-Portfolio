@@ -7,7 +7,7 @@ export function FlipWordsDemo() {
 
   return (
     <div className="flex justify-start items-start">
-      <div className="text-4xl mx-auto font-bold text-black dark:text-neutral-400">
+      <div className="text-lg ssssxl:text-xl sssxl:text-3xl md:text-2xl lg:text-4xl mx-auto font-bold text-black dark:text-neutral-400">
         I'm 
         <FlipWords words={words} /> <br />
       </div>

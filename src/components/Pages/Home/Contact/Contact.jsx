@@ -6,7 +6,7 @@ export function ContactForm() {
   return (
     <div
       id="contact"
-      className="text-center flex flex-col justify-center items-center w-full border-b-2 border-sky-400  pb-16"
+      className="text-center flex flex-col justify-center items-center w-full  pb-16"
     >
       <div className="text-center flex flex-col justify-center items-center pt-16">
         <h1 className="text-4xl font-bold">Have a Project in mind?</h1>

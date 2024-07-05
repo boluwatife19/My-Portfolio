@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const cn = (...classes) => classes.filter(Boolean).join(' ');
 
-export const FloatingNav = ({ navItems, className }) => {
+export const FloatingNav = ({navItems, className }) => {
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(false);
   const location = useLocation();

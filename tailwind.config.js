@@ -26,6 +26,15 @@ export default {
       rotate: {
         '-30': '-30deg',
       },
+      screens: {
+        'sxl' : '1441px',
+        'ssxl' : '1380px',
+        'ssxxl' : '950px',
+        'sssxxxl' : '680px',
+        'sssxxl' : '644px',
+        'sssxl' : '500px',
+        'ssssxl' : '360px',
+      },
       maxWidth: {
         '7xl-custom': 'calc(80rem + 50px)' // Adjust the value as needed
       },
