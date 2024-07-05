@@ -143,8 +143,8 @@ function BackG() {
         <Tech />
         <About />
         <Project />
-        {/* <Service />
-        <ContactForm /> */}
+        <Service />
+        {/* <ContactForm /> */}
         </TracingBeam>
         {/* <Footer /> */}
       </motion.div>
