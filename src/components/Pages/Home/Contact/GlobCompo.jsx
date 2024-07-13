@@ -77,9 +77,7 @@ export function Globe({ globeConfig, data }) {
 
     const filteredPoints = points.filter(
       (v, i, a) =>
-        a.findIndex(
-          (v2) => v2.lat === v.lat && v2.lng === v.lng
-        ) === i
+        a.findIndex((v2) => v2.lat === v.lat && v2.lng === v.lng) === i
     );
 
     setGlobeData(filteredPoints);
@@ -178,11 +176,47 @@ export function WebGLRendererConfig() {
 }
 
 export function World(props) {
+  const [canvasSize, setCanvasSize] = useState({ width: 450, height: 450 });
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setCanvasSize({ width: 450, height: 450 });
+      } else if (window.innerWidth >= 768) {
+        setCanvasSize({ width: 250, height: 250 });
+      } else if (window.innerWidth >= 550) {
+        setCanvasSize({ width: 350, height: 350 });
+      } else if (window.innerWidth >= 500) {
+        setCanvasSize({ width: 250, height: 250 });
+      } else if (window.innerWidth >= 450) {
+        setCanvasSize({ width: 150, height: 150 });
+      } else {
+        setCanvasSize({ width: 100, height: 100 });
+      }
+    };
+
+    // Initial call to set canvas size based on window width
+    handleResize();
+
+    // Event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup function to remove event listener
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const { globeConfig } = props;
   const scene = new Scene();
   scene.fog = new Fog(0xffffff, 400, 2000);
   return (
-    <Canvas scene={scene} camera={new PerspectiveCamera(50, aspect, 180, 1800)} style={{ width: '450px', height: '450px' }}>
+    <Canvas
+      scene={scene}
+      camera={new PerspectiveCamera(50, aspect, 180, 1800)}
+      style={{
+        width: `${canvasSize.width}px`,
+        height: `${canvasSize.height}px`,
+      }}
+    >
       <WebGLRendererConfig />
       <ambientLight color={globeConfig.ambientLight} intensity={0.6} />
       <directionalLight

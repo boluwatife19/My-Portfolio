@@ -393,10 +393,10 @@ export function GlobeDemo() {
   ];
 
   return (
-    <div className="flex flex-row items-end justify-end relative w-1/2">
-      <div className="max-w-full w-full relative overflow-hidden   flex flex-row items-end justify-end">
+    <div className="hidden sm:flex flex-row items-center md:items-end justify-center md:justify-end relative w-full md:1/3 lg:w-1/2">
+      <div className="max-w-full w-full relative overflow-hidden flex flex-row md:items-end justify-center md:justify-end">
        
-        <div className="w-full z-10 flex flex-row items-end justify-end">
+        <div className="w-full z-10 flex flex-row md:items-end justify-center md:justify-end">
           <Suspense fallback={<div>Loading...</div>}>
             <World data={sampleArcs} globeConfig={globeConfig} />
           </Suspense>

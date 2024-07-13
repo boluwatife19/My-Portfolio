@@ -82,7 +82,9 @@ export const StickyScroll = ({ content, contentClassName }) => {
           <div className="h-40" />
         </div>
         <div className="block md:hidden w-full flex flex-col items-start justify-start">
-          <h1 className="text-2xl sssxl:text-5xl font-bold mb-[-50px] sssxl:mb-0">About Me</h1>
+          <h1 className="text-2xl sssxl:text-5xl font-bold mb-[-50px] sssxl:mb-0">
+            About Me
+          </h1>
           {content.map((item, index) => (
             <div key={item.title + index} className="w-full">
               <motion.h2
@@ -107,20 +109,19 @@ export const StickyScroll = ({ content, contentClassName }) => {
               >
                 {item.description}
               </motion.p>
-                
-      <div className="w-full flex justify-end rounded-md relative overflow-hidden">
-        <div
-          // style={{ background: backgroundGradient }}
-          className={cn(
-            "h-5/6 w-full rounded-md relative overflow-hidden",
-            contentClassName
-          )}
-        >
-        {item.content}
-        </div>
-      </div>
+
+              <div className="w-full flex justify-end rounded-md relative overflow-hidden">
+                <div
+                  // style={{ background: backgroundGradient }}
+                  className={cn(
+                    "h-5/6 w-full rounded-md relative overflow-hidden",
+                    contentClassName
+                  )}
+                >
+                  {item.content}
+                </div>
+              </div>
             </div>
-            
           ))}
         </div>
       </div>

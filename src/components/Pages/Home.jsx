@@ -144,9 +144,9 @@ function BackG() {
         <About />
         <Project />
         <Service />
-        {/* <ContactForm /> */}
+        <ContactForm />
         </TracingBeam>
-        {/* <Footer /> */}
+        <Footer />
       </motion.div>
       </AuroraBackground>
         </>

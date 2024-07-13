@@ -16,7 +16,7 @@ function Hero() {
         <p className="text-sm sssxl:text-lg md:text-sm lg:text-lg text-black">👋 Hi there! I'm Paul, a full stack developer specializing in JavaScript and PHP.
           I'm passionate about crafting clean, efficient code and creating seamless user experiences. Let's build something awesome together! 🚀✨
         </p>
-        <div className="flex flex-col md:flex-row md:items-center gap-6">
+        <div className="flex flex-col md:flex-row md:items-center gap-6 ">
           <div className="flex items-center gap-6">
           <Link to={"https://www.youtube.com/@DEVTIFE"} className="text-xl sssxl:text-3xl md:text-xl lg:text-3xl">
             <FaYoutube style={{ color: 'red' }} />

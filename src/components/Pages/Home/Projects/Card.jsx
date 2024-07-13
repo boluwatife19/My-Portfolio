@@ -4,7 +4,7 @@ import { PinContainer } from "../../../ui/Threedpin";
 
 import envio from "../../../../assets/Images/websites/envio.png";
 import estam from "../../../../assets/Images/websites/estam.png";
-import mavin from "../../../../assets/Images/websites/mavin.png";
+import seventhage from "../../../../assets/Images/websites/seventhage.png";
 import makavid from "../../../../assets/Images/websites/makavid.png";
 import userve from "../../../../assets/Images/websites/userve.png";
 import loko from "../../../../assets/Images/websites/loko.png";
@@ -21,11 +21,11 @@ const Projects = [
   },
   {
     id: 2,
-    Name: "Envio Integrated Service",
+    Name: "Seventhage Energy & Technical",
     TLang: ["React"],
     Role: "Project Creator",
-    link: "https://enviointegrated.com/",
-    imgs: envio,
+    link: "https://seventhageenergy.com/",
+    imgs: seventhage,
   },
   {
     id: 3,
@@ -37,6 +37,14 @@ const Projects = [
   },
   {
     id: 4,
+    Name: "Envio Integrated Service",
+    TLang: ["React"],
+    Role: "Project Creator",
+    link: "https://enviointegrated.com/",
+    imgs: envio,
+  },
+  {
+    id: 5,
     Name: "Makavid",
     TLang: ["HTML", "CSS", "JavaScript"],
     Role: "Project Creator",
@@ -44,21 +52,13 @@ const Projects = [
     imgs: makavid,
   },
   {
-    id: 5,
+    id: 6,
     Name: "Loko Food",
     TLang: ["React"],
     Role: "Project Creator",
     link: "https://lokofoods.netlify.app/",
     imgs: loko,
-  },
-  {
-    id: 6,
-    Name: "Mavin Website",
-    TLang: ["React"],
-    Role: "Project Creator",
-    link: "https://mavinsng.netlify.app/",
-    imgs: mavin,
-  },
+  }
 ];
 
 export function AnimatedPinDemo() {
