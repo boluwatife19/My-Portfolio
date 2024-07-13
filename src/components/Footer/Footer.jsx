@@ -8,7 +8,11 @@ import { FaYoutube } from "react-icons/fa";
 export function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer className="z-30 w-full px-12 lg:px-24">
+    <footer className="z-30 w-full px-12 lg:px-24" 
+    data-aos="fade-up"
+    data-aos-duration="2000"
+    data-aos-once="false"
+    data-aos-delay="100">
       <div className="mx-auto w-full max-w-full py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
@@ -72,20 +76,20 @@ export function Footer() {
             . All Rights Reserved.
           </span>
           <div className="flex justify-center mt-0">
-            <a href="#" className="text-gray-500 hover:text-gray-900 ms-5">
-              <FaYoutube/>
+            <a href="https://www.instagram.com/devtife/" className="text-gray-500 hover:text-gray-900 ms-5">
+              <FaInstagram/>
               <span className="sr-only">Instagram Account</span>
             </a>
-            <a href="#" className="text-gray-500 hover:text-gray-900 ms-5">
+            <a href="https://x.com/dev_tife" className="text-gray-500 hover:text-gray-900 ms-5">
               <FaXTwitter />
-              <span className="sr-only">Twitter page</span>
+              <span className="sr-only">X</span>
             </a>
-            <a href="#" className="text-gray-500 hover:text-gray-900 ms-5">
+            <a href="https://github.com/boluwatife19" className="text-gray-500 hover:text-gray-900 ms-5">
               <FaGithub />
               <span className="sr-only">GitHub account</span>
             </a>
-            <a href="#" className="text-gray-500 hover:text-gray-900 ms-5">
-              <FaInstagram />
+            <a href="https://www.youtube.com/@DEVTIFE" className="text-gray-500 hover:text-gray-900 ms-5">
+              <FaYoutube />
 
               <span className="sr-only">Youtube Account</span>
             </a>

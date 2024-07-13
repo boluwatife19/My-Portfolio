@@ -7,6 +7,10 @@ export function ContactForm() {
     <div
       id="contact"
       className="text-center flex flex-col justify-center items-center w-full px-6 sm:px-12 ssxl:px-8 sxl:px-4   pb-16"
+          data-aos="fade-in"
+          data-aos-duration="2000"
+          data-aos-once="false"
+          data-aos-delay="100"
     >
       <div className="text-center flex flex-col justify-center items-center pt-16">
         <h1 className="text-4xl font-bold">Have a Project in mind?</h1>
