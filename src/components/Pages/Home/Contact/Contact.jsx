@@ -74,7 +74,8 @@ export function ContactForm() {
                 className="w-full border-b-2 border-gray-500 outline-0 bg-transparent text-black h-24 pt-2 text-white resize-none text-sm lg:text-lg"
               ></textarea>
             </div>
-            <ButtonThree>Send</ButtonThree>
+            <button type="submit">
+            <ButtonThree>Send</ButtonThree></button>
           </form>
         </div>
         <GlobeDemo />
