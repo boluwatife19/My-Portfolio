@@ -123,9 +123,8 @@ const TracingBeam = ({ children, className }) => {
 };
 
 
-function BackG() {
+export default function BackG() {
   return (
-    <>
     <AuroraBackground>
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
@@ -149,8 +148,5 @@ function BackG() {
         <Footer />
       </motion.div>
       </AuroraBackground>
-        </>
       )
 }
-
-export default BackG;

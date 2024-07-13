@@ -21,6 +21,7 @@ export function ContactForm() {
             method="POST"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            action="/"
             className="text-center flex flex-col justify-start items-start w-full p-8 gap-12"
           >
             <input type="hidden" name="form-name" value="contact" />
