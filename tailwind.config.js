@@ -42,6 +42,8 @@ export default {
         aurora: "aurora 60s linear infinite",
         scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
         meteor: "meteoreffect 5s linear infinite",
+        marquee: "marquee var(--duration) linear infinite",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
       },
       keyframes: {
         aurora: {
@@ -50,6 +52,14 @@ export default {
           },
           to: {
             backgroundPosition: "350% 50%, 350% 50%",
+          },
+          marquee: {
+            from: { transform: "translateX(0)" },
+            to: { transform: "translateX(calc(-100% - var(--gap)))" },
+          },
+          "marquee-vertical": {
+            from: { transform: "translateY(0)" },
+            to: { transform: "translateY(calc(-100% - var(--gap)))" },
           },
         },
         scroll: {

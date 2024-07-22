@@ -9,6 +9,8 @@ import makavid from "../../../../assets/Images/websites/makavid.png";
 import userve from "../../../../assets/Images/websites/userve.png";
 import loko from "../../../../assets/Images/websites/loko.png";
 import { ButtonOne } from "../../../ui/button";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Projects = [
   {
@@ -94,7 +96,11 @@ export function AnimatedPinDemo() {
         <PinContainer key={project.id} title={project.Name} href={project.link}>
           <div className="flex basis-full flex-col p-0 ssxlp-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[16rem] h-[14rem] sssxl:w-[24rem] sssxl:h-[20rem] sssxxxl:w-[16rem] sssxxxl:h-[14rem] ssxxl:w-[24rem] ssxxl:h-[20rem] lg:w-[16rem] lg:h-[14rem]  sxl:w-[24rem] sxl:h-[20rem]">
             <div className="flex flex-1 rounded-lg mt-0 ssxl:mt-2 overflow-hidden">
-              <img src={project.imgs} alt={project.Name} className="w-full" />
+              <LazyLoadImage 
+          effect="blur"
+            src={project.imgs}
+            alt={project.Name}
+            className="w-full" />
             </div>
             <h3 className="ssxl:!pb-2 !m-0 font-bold text-base text-slate-100 ssxl:mt-4 pt-4">
               {project.Role}

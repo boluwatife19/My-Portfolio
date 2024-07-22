@@ -6,6 +6,9 @@ import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { ButtonTwo } from "../../../ui/button";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+import Paul from "../../../../assets/Images/Paul/Paul.jpg"
 import "./hero.css"
 
 function Hero() {
@@ -47,7 +50,9 @@ function Hero() {
           data-aos-delay="100"  className="sssxl:w-full md:w-1/2 lg:w-0 xl:w-1/2 flex items-center justify-center md:justify-end">
         <div className="two w-44 h-44 ssssxl:w-56 ssssxl:h-56 sssxl:w-72  sssxl:h-72 sm:w-96 sm:h-96 md:w-60  md:h-60 lg:w-72 lg:h-72 xl:w-96 xl:h-96">
           <div className="one w-44 h-44 ssssxl:w-56 ssssxl:h-56 overflow-hidden sssxl:w-72  sssxl:h-72 sm:w-96 sm:h-96 md:w-60  md:h-60 lg:w-72 lg:h-72 xl:w-96 xl:h-96">
-            <img src="https://images.unsplash.com/photo-1542702937-506268e68902?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          <LazyLoadImage 
+          effect="blur"
+            src={Paul} />
           </div>
         </div>
       </div>

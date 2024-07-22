@@ -9,6 +9,7 @@ import { Service } from "./Home/Services/Service";
 import { Project } from "./Home/Projects/Project";
 import { ContactForm } from "./Home/Contact/Contact";
 import { Footer } from "../Footer/Footer";
+import { FloatingNavDemo } from "../../test"
 
 const TracingBeam = ({ children, className }) => {
   const ref = useRef(null);
@@ -66,10 +67,8 @@ const TracingBeam = ({ children, className }) => {
               delay: 0.5,
             }}
             animate={{
-              backgroundColor:
-                scrollYProgress.get() > 0 ? "white" : "blue",
-              borderColor:
-                scrollYProgress.get() > 0 ? "white" : "blue",
+              backgroundColor: scrollYProgress.get() > 0 ? "white" : "blue",
+              borderColor: scrollYProgress.get() > 0 ? "white" : "blue",
             }}
             className="h-2 w-2  rounded-full border border-neutral-300 bg-white"
           />
@@ -122,31 +121,33 @@ const TracingBeam = ({ children, className }) => {
   );
 };
 
-
 export default function BackG() {
   return (
-    <AuroraBackground>
-      <motion.div
-        initial={{ opacity: 0.0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-        className="flex flex-col items-center justify-center w-[100%]"
-        id="home"
-      >
-        <TracingBeam>
-        <Hero />
-        <Tech />
-        <About />
-        <Project />
-        <Service />
-        <ContactForm />
-        </TracingBeam>
-        <Footer />
-      </motion.div>
+    <div>
+      <FloatingNavDemo />
+      <AuroraBackground>
+        <motion.div
+          initial={{ opacity: 0.0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}
+          className="flex flex-col items-center justify-center w-[100%]"
+          id="home"
+        >
+          <TracingBeam>
+            <Hero />
+            <Tech />
+            <About />
+            <Project />
+            <Service />
+            <ContactForm />
+          </TracingBeam>
+          <Footer />
+        </motion.div>
       </AuroraBackground>
-      )
+    </div>
+  );
 }

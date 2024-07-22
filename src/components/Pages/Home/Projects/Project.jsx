@@ -3,7 +3,7 @@ import { AnimatedPinDemo } from "./Card";
 
 export const Project = () => {
   return (
-    <div id="project" className="pt-4 px-12 border-b-2 border-sky-400  pb-16 overflow-hidden" id="project" 
+    <div id="project" className="pt-4 px-12 border-b-2 border-sky-400  pb-16 overflow-hiddennpm run host" 
     data-aos="zoom-in"
     data-aos-duration="2000"
     data-aos-once="false"
