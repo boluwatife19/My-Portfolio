@@ -28,6 +28,22 @@ body{
     height: 0;
   }
 
+  /* Webkit-based browsers (Chrome, Safari, Edge) */
+html::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+/* Track */
+html::-webkit-scrollbar-track {
+  background: rgb(124, 216, 255); /* Gradient background */
+}
+
+/* Handle */
+html::-webkit-scrollbar-thumb {
+  background-color: #0077bc; /* Thumb color */
+  border-radius: 6px; /* Rounded corners */
+}
+
   /* .hidden-scrollbar{
     background: rgba(255, 255, 255, 0.389);
   } */
