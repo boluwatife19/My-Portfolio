@@ -12,18 +12,18 @@ body{
   background: white;
 }
 
-.maxh::-webkit-scrollbar, html::-webkit-scrollbar {
+.maxh::-webkit-scrollbar {
     display: none;
   }
   
   /* For Firefox */
-  .maxh, html {
+  .maxh {
     scrollbar-width: none; /* hides scrollbar */
     -ms-overflow-style: none;  /* IE 10+ */
   }
   
   /* Additional fix for Firefox */
-  .maxh::-webkit-scrollbar, html::-webkit-scrollbar{
+  .maxh::-webkit-scrollbar{
     width: 0;
     height: 0;
   }
